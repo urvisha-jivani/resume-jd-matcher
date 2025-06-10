@@ -1,0 +1,22 @@
+John Doe
+Email: john.doe@example.com
+Phone: (123) 456-7890
+
+Summary:
+Experienced software developer with 5+ years in full stack web development. Skilled in Python, JavaScript, React, and Django. Strong background in building scalable web applications and APIs.
+
+Skills:
+- Python, Django, Flask
+- JavaScript, React, Node.js
+- RESTful API development
+- SQL and NoSQL databases
+- Agile methodologies
+
+Experience:
+Software Engineer at Tech Solutions Inc. (2019 - Present)
+- Developed and maintained web applications using Django and React
+- Collaborated with cross-functional teams to deliver new features
+- Improved API performance by 30%
+
+Education:
+Bachelor of Science in Computer Science, XYZ University (2015 - 2019)

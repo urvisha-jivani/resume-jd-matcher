@@ -1,0 +1,19 @@
+Job Title: Full Stack Developer
+
+We are seeking a skilled Full Stack Developer to join our team. The ideal candidate will have experience with Python and JavaScript frameworks, particularly Django and React.
+
+Responsibilities:
+- Design and develop web applications and APIs
+- Collaborate with product and design teams to implement new features
+- Write clean, scalable, and maintainable code
+- Participate in code reviews and agile ceremonies
+
+Requirements:
+- Strong experience in Python and Django framework
+- Proficiency with JavaScript and React
+- Experience with RESTful API development
+- Familiarity with SQL and NoSQL databases
+- Excellent problem-solving skills and teamwork
+
+Education:
+Bachelor’s degree in Computer Science or related field preferred
