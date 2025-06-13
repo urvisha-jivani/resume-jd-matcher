@@ -1,25 +1,29 @@
 import re
 import nltk
 from nltk.corpus import stopwords
-from nltk.tokenize import word_tokenize
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-# Download NLTK data if not already downloaded
-nltk.download('punkt')
+# Download stopwords if not already present
 nltk.download('stopwords')
 
 stop_words = set(stopwords.words('english'))
 
 def clean_text(text):
-    """Lowercase, remove non-word chars, tokenize, remove stopwords."""
+    """
+    Lowercase, remove non-word characters, split into words,
+    and remove common English stopwords.
+    """
     text = re.sub(r'\W+', ' ', text.lower())
-    tokens = word_tokenize(text)
-    tokens = [w for w in tokens if w not in stop_words]
+    tokens = text.split()
+    tokens = [word for word in tokens if word not in stop_words]
     return ' '.join(tokens)
 
 def compute_match_score(resume_text, jd_text):
-    """Compute cosine similarity TF-IDF score between resume and JD."""
+    """
+    Compute a similarity score (0-100) between resume and job description
+    using TF-IDF vectorization and cosine similarity.
+    """
     clean_resume = clean_text(resume_text)
     clean_jd = clean_text(jd_text)
 
