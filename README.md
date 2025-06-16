@@ -1,25 +1,33 @@
 # 📄 Resume-JD Matcher
 
-A simple Streamlit web app that calculates how well a resume matches a job description using text similarity (TF-IDF + cosine similarity).
+A simple and useful tool to quickly check how well a resume aligns with a job description — all through a clean Streamlit interface.
 
 ## 🔍 What it does
 
-This app compares the content of a resume and a job description to compute a match score out of 100. The score is based on how similar the keywords and content are between the two inputs.
+This app takes a resume and a job description (JD) as input and gives you a match score out of 100. Instead of just looking at matching keywords, it uses a BERT model to understand the actual meaning of the text. So even if your wording doesn’t exactly match the JD, it still picks up the similarities.
 
-## 🚀 Features
+## ✅ Key Features
 
-- Paste your resume and JD directly
-- Instant match score (based on TF-IDF)
-- Clean UI with Streamlit
-- Basic text preprocessing (lowercasing, punctuation removal, stopword filtering)
+- Paste your resume and JD right into the app
+- Instant score based on semantic similarity (not just keyword match)
+- Built with Streamlit for a quick and clean UI
+- No need to upload files — just copy and paste
 
-## 🛠 Tech Stack
+## ⚙️ Tech Used
 
 - Python
 - Streamlit
-- scikit-learn
-- NLTK
-- pandas, numpy (optional extensions)
+- sentence-transformers (BERT-based model)
+- PyTorch (powers the BERT model internally)
 
+### Install the dependencies
+```bash
+pip install -r requirements.txt
+```
+
+## Run the app
+```bash
+streamlit run app.py
+```
 
 
